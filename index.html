@@ -341,12 +341,12 @@
 	<article class="handmade_product">
       <picture class="handmade_picture">
 	    <source 
-        media="(max-width:1200px)"
-        srcset="images/shop-item-tablet1.jpg"/>
+        media="(min-width: 641px) and (max-width: 1200px)"
+        srcset="images/shop-item-tablet1.jpg">
         <source 
-        media="(max-width:640px)"
-        srcset="images/shop-item-mobile1.jpg"/>
-		<img src="images/shop-item-desk1.jpg" alt="подушка" />
+        media="(max-width: 640px)"
+        srcset="images/shop-item-mobile1.jpg">
+		<img src="images/shop-item-desk1.jpg" alt="подушка">
       </picture>
 	  <div class="handmade_base">
 			<h2 class="handmade_heading">подушки на диван</h2>
@@ -369,12 +369,12 @@
 	<article class="handmade_product">
 		<picture class="handmade_picture">
 	     <source 
-        media="(max-width:1200px)"
-        srcset="images/shop-item-tablet2.jpg"/>
+        media="(min-width: 641px) and (max-width: 1200px)"
+        srcset="images/shop-item-tablet2.jpg">
          <source 
-        media="(max-width:640px)"
-        srcset="images/shop-item-mobile2.jpg"/>
-		 <img src="images/shop-item-desk2.jpg" alt="зайка" />
+        media="(max-width: 640px)"
+        srcset="images/shop-item-mobile2.jpg">
+		 <img src="images/shop-item-desk2.jpg" alt="зайка">
         </picture>
 		<div class="handmade_base">
 			<h2 class="handmade_heading">кукла "зайчик"</h2>
@@ -393,12 +393,12 @@
 	<article class="handmade_product">
 		<picture class="handmade_picture">
 	     <source 
-        media="(max-width:1200px)"
-        srcset="images/shop-item-tablet3.jpg"/>
+        media="(min-width:641px) and (max-width: 1200px)"
+        srcset="images/shop-item-tablet3.jpg">
          <source 
-        media="(max-width:640px)"
-        srcset="images/shop-item-mobile3.jpg"/>
-		 <img src="images/shop-item-desk3.jpg" alt="рамка" />
+        media="(max-width: 640px)"
+        srcset="images/shop-item-mobile3.jpg">
+		 <img src="images/shop-item-desk3.jpg" alt="рамка">
         </picture>
 		<div class="handmade_base">
 			<h2 class="handmade_heading">шестиугольная рамка</h2>
@@ -441,5 +441,36 @@
            <a href="#0" class="license-a"><span class="license">Copyright © 2009–2019 City Blog LLC.</span></a>
        </div>
        </footer >
+        <div class="popup"> 
+          <div class="popup_content">
+           <span class="cross">&times</span>
+           <div class="popup_base">
+            <header class="popup_heading">ваш фидбек</header>
+            <form class="survey">
+            	<div class="answer_form">
+            	     <h3 class="form_heading" for="question1">Как часто вы заходите на сайт?</h3>
+            	     <select class="survey_answer" id="question1"></select>
+            	</div>
+            	<div class="form_mail">
+            		<h3 class="form_heading">Вы подписаны на e-mail рассылку?</h3>
+            		<div class="form_mail_base">
+            		 <input class="answer_mail" for="question2" type="radio">
+            	     <label class="survey_mail" for="question2">да</label>
+            	     <input class="answer_mail" for="question3" type="radio">
+            	     <label class="survey_mail" for="question3">нет</label>
+            	    </div>
+            	</div>
+            	<div class="form_content">
+            	     <h3 class="form_heading">Расскажите, какой контент вы хотели бы видеть
+на нашем сайте?</h3>
+            	     <textarea class="survey_content"></textarea>
+                </div>
+                <button class="form_button" type="submit">отправить</button>
+            </form>
+
+            </div>
+          </div>
+        </div>
+
 </body>
 </html>

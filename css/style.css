@@ -1099,6 +1099,7 @@ font-family: "OpenSans";
   width: 100% ;
 }
 }
+
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
 
   .actual_post {
@@ -1346,4 +1347,24 @@ margin-top: 17px;
   .owner {
     margin-top: 50px;
   }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+
+  .actual_post {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.actual_post_article {
+  min-height: 245px;
+  max-height: 350px;
+  width: 49%;
+  position: relative;
+}
+  .actual_post_article:nth-child(2n) {
+    margin-left: 4px;
+  }
+
+
 }
