@@ -441,29 +441,41 @@
            <a href="#0" class="license-a"><span class="license">Copyright © 2009–2019 City Blog LLC.</span></a>
        </div>
        </footer >
+       <input type="checkbox" class="popup_close" id="cl1">
         <div class="popup"> 
           <div class="popup_content">
-           <span class="cross">&times</span>
+           <label class="cross" for="cl1">&times</label>
            <div class="popup_base">
-            <header class="popup_heading">ваш фидбек</header>
+            <h2 class="popup_heading">ваш фидбек</h2>
             <form class="survey">
             	<div class="answer_form">
+            		<label>
             	     <h3 class="form_heading" for="question1">Как часто вы заходите на сайт?</h3>
-            	     <select class="survey_answer" id="question1"></select>
+            	     <select class="survey_answer" id="question1">
+                       <option value="v1" class="answer_option">Почти каждый день</option>
+                       <option value="v2" class="answer_option">Раз в несколько дней</option>
+                       <option value="v3" class="answer_option">Раз в несколько недель</option>
+                       <option value="v4" class="answer_option">Несколько раз в год</option>
+            	     </select>
+            	    </label>
             	</div>
             	<div class="form_mail">
             		<h3 class="form_heading">Вы подписаны на e-mail рассылку?</h3>
             		<div class="form_mail_base">
-            		 <input class="answer_mail" for="question2" type="radio">
-            	     <label class="survey_mail" for="question2">да</label>
-            	     <input class="answer_mail" for="question3" type="radio">
-            	     <label class="survey_mail" for="question3">нет</label>
+            	     <label class="survey_mail" >
+            	      <input class="answer_mail" type="radio" name="choice" checked />
+            	      <span class="choice_mail">Да</span>
+            	     </label>
+            	     <label class="survey_mail">
+            	      <input class="answer_mail" type="radio" name="choice"/>
+            	      <span class="choice_mail">Нет</span>
+            	     </label>
             	    </div>
             	</div>
             	<div class="form_content">
             	     <h3 class="form_heading">Расскажите, какой контент вы хотели бы видеть
 на нашем сайте?</h3>
-            	     <textarea class="survey_content"></textarea>
+            	     <textarea class="survey_content" placeholder="Может, больше рецептов?"></textarea>
                 </div>
                 <button class="form_button" type="submit">отправить</button>
             </form>
