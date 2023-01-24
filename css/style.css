@@ -888,6 +888,7 @@ font-family: "OpenSans";
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 .popup_content {
@@ -1122,23 +1123,34 @@ resize: none;
   
 .actual_post {
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.actual_heading {
+  font-size: 17px;
+  margin-left: 31px;
 }
 
 .actual_post_article {
-  min-height: 245px;
+  min-height: 300px;
   width: 49%;
+  margin-left: 0px;
 }
-  .actual_post_article:nth-child(n2) {
+  .actual_b .actual_d {
   margin-left: 4px;
 }
-  .actual_post_article:nth-child(-n+2) {
-  margin-bottom: 4px;
-}
+ 
 
 .actual_post_article:nth-child(3) {
   margin-left: 0px;
 }
+.actual_c {
+  margin-left: 0px;
+}
 
+ .actual_post_article:nth-child(-n+2) {
+  margin-bottom: 4px;
+}
   
 .base {
   
