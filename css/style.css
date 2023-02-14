@@ -1959,6 +1959,48 @@ height: 435px;
     margin-left: 4px;
   }
 
+  .articles {
+    padding-left: 0px;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.aside_base {
+  padding-left: 0px;
+  padding-right: 0px;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 330px;
+}
+
+.aside_article {
+  
+}
+
+.send_mail {
+  width: 330px;
+  box-sizing: border-box;
+}
+
+
+.submit_mail {
+ width: 330px;
+}
+
+.themes_base {
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.heading_themes {
+  margin-left: 85px;
+  margin-right: ;
+}
 
 }
 
